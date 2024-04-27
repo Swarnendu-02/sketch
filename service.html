@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WEBMAA</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="fullPage very simple demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,simple" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-5/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responcive.css">
+    <link href="css/owl.carousel.min.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/odometer.css?v=2" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-9 col-md-3" style="display: flex;align-items: center;">
+                    <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                </div>
+                <div class="menu-box col-3 col-md-9 d-flex align-items-center justify-content-end" id="collapsemenu">
+                    <button onclick="$('.navigation').addClass('menu-open');"
+                        style="background:transparent; font-size: 21px; color:var(--purple)"
+                        class="d-md-none main-btn-bk border-0 p-0"><i class="fas fa-bars"></i></button>
+                    <nav class="navigation" id="navigationmenu">
+                        <button class="d-md-none" onclick="$('.navigation').removeClass('menu-open'); $('.sub-menu').slideUp().removeClass('active');
+                    $('.has-drop').removeClass('active-a');"
+                            style="position: absolute;right: 19px;border: 0;background: transparent;color: #000;top: 14px;font-size: 16px;"><i
+                                class="fas fa-arrow-right"></i></button>
+                        <ul>
+                            <li class="mneu-a"><a href="about.html">About</a></li>
+                            <li class="mneu-a"><a href="service.html">Services</a></li>
+                            <li class="mneu-a"><a href="sollution.html">Solutions</a></li>
+                            <li class="mneu-a"><a href="works.html">Works</a></li>
+                            <li class="mneu-a"><a href="hiteteam.html">Hite Team</a></li>
+                            <li class="mneu-a"><a href="blog.html">Blog</a></li>
+                            <li class="mneu-a"><a href="contactus.html"><span>Contact us</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        $(document).ready(function () {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+    </script>
+    <div class="container-fluid banner service-banner p-0 position-relative">
+        <img src="images/servicebanner.png" class="ser-ban">
+        <div class="container position-relative h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <h2>We craft apps and digital experiences for enterprises, mid-size companies, and startups.</h2>
+                    <a class="ban-tag"><span style="color: var(--red);">Design</span> . <Span
+                            style="color: var(--purple);">Development</Span> . <span
+                            style="color: var(--green);">Consultancy</span> . </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 col-md-10 offset-md-1 main-heaing">
+                    <h2 class="text-center">Exceptional products with <span style="color: var(--red);">end-to-end
+                            support</span> and expert guidance</h2>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 content">
+                    <p class="text-center">At Sketch Web Solutions, we offer a complete range of services that build up
+                        business value, from the initial idea and formulation of product strategy, through building a
+                        prototype and testing it with users, right to the creation of the product itself.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="col-12 service-heading">
+                        <h4>01</h4>
+                        <h5>Discover</h5>
+                        <h6>Ideas & Evaluation</h6>
+                    </div>
+                    <div class="col-12 col-md-8 serv-con">
+                        <p>Give your product idea a shape. Plan and evaluate the essential features of your product to
+                            accomplish your business goals and eliminate possible mistakes.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-12 service-ex-wrap mt-4">
+                        <div class="exelecnce-box">
+                            <h4>01</h4>
+                            <h5>Brainstorming</h5>
+                            <h6>A five-day workshop to answer crucial business questions, plan the essential features of
+                                your product and reduce the risk of bringing a product to the market.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>02</h4>
+                            <h5>Hypothesis</h5>
+                            <h6>A workshop aimed at shaping your business idea, answering questions regarding project
+                                planning, time estimation and budgeting.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>03</h4>
+                            <h5>Conceptualization</h5>
+                            <h6>An evaluation which will help you radically improve your product by eliminating all UX
+                                issues to get a truly appealing and streamlined experience that users will love.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>04</h4>
+                            <h5>Assumptions</h5>
+                            <h6>Consider the scope and complexity of the task at hand, It help in identifying potential
+                                areas for improvement as well as providing insight into how changes will affect the
+                                overall outcome of the project</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>05</h4>
+                            <h5>Constraints</h5>
+                            <h6>From budget, timeline, resources, skillsets and more. In order to meet these constraints
+                                and deliver the project on time, project managers must have a clear understanding of the
+                                requirements and plan accordingly</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 su-st-wrap py-5">
+            <div class="container position-relative">
+                <div class="row ">
+                    <div class="col-12">
+                        <h5 class="su-st-head">Success stories</h5>
+                        <div class="owl-carousel owl-theme blogbanner">
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Can Chat GPT replace virtual assistants and research engines?</h4>
+                                <p><b>2023 . <i>Automation</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Top skills and technologies to consider learning in 2023?</h4>
+                                <p><b>2023 . <i>Advice</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Which technology trends will dominate in 2023?</h4>
+                                <p><b>2023 . <i>Web Development</i></b><span><img src="images/Vision.png">5,000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="col-12 service-heading">
+                        <h4>02</h4>
+                        <h5>Design</h5>
+                        <h6>beautiful and usable products</h6>
+                    </div>
+                    <div class="col-12 col-md-8 serv-con">
+                        <p>Product design strives to deliver beautiful and usable products that solve user problems and
+                            help you achieve your business goals.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-12 service-ex-wrap mt-4">
+                        <div class="exelecnce-box">
+                            <h4>01</h4>
+                            <h5>Brainstorming</h5>
+                            <h6>A five-day workshop to answer crucial business questions, plan the essential features of
+                                your product and reduce the risk of bringing a product to the market.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>02</h4>
+                            <h5>Hypothesis</h5>
+                            <h6>A workshop aimed at shaping your business idea, answering questions regarding project
+                                planning, time estimation and budgeting.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>03</h4>
+                            <h5>Conceptualization</h5>
+                            <h6>An evaluation which will help you radically improve your product by eliminating all UX
+                                issues to get a truly appealing and streamlined experience that users will love.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>04</h4>
+                            <h5>Assumptions</h5>
+                            <h6>Consider the scope and complexity of the task at hand, It help in identifying potential
+                                areas for improvement as well as providing insight into how changes will affect the
+                                overall outcome of the project</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>05</h4>
+                            <h5>Constraints</h5>
+                            <h6>From budget, timeline, resources, skillsets and more. In order to meet these constraints
+                                and deliver the project on time, project managers must have a clear understanding of the
+                                requirements and plan accordingly</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 su-st-wrap py-5">
+            <div class="container position-relative">
+                <div class="row ">
+                    <div class="col-12">
+                        <h5 class="su-st-head">Success stories</h5>
+                        <div class="owl-carousel owl-theme blogbanner">
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Can Chat GPT replace virtual assistants and research engines?</h4>
+                                <p><b>2023 . <i>Automation</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Top skills and technologies to consider learning in 2023?</h4>
+                                <p><b>2023 . <i>Advice</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Which technology trends will dominate in 2023?</h4>
+                                <p><b>2023 . <i>Web Development</i></b><span><img src="images/Vision.png">5,000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="col-12 service-heading">
+                        <h4>03</h4>
+                        <h5>Build</h5>
+                        <h6>fast & secure web application</h6>
+                    </div>
+                    <div class="col-12 col-md-8 serv-con">
+                        <p>Developing a successful digital product is a complex process that requires choosing the right
+                            partner, applying innovative solutions, and following reliable processes.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-12 service-ex-wrap mt-4">
+                        <div class="exelecnce-box">
+                            <h4>01</h4>
+                            <h5>Brainstorming</h5>
+                            <h6>A five-day workshop to answer crucial business questions, plan the essential features of
+                                your product and reduce the risk of bringing a product to the market.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>02</h4>
+                            <h5>Hypothesis</h5>
+                            <h6>A workshop aimed at shaping your business idea, answering questions regarding project
+                                planning, time estimation and budgeting.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>03</h4>
+                            <h5>Conceptualization</h5>
+                            <h6>An evaluation which will help you radically improve your product by eliminating all UX
+                                issues to get a truly appealing and streamlined experience that users will love.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>04</h4>
+                            <h5>Assumptions</h5>
+                            <h6>Consider the scope and complexity of the task at hand, It help in identifying potential
+                                areas for improvement as well as providing insight into how changes will affect the
+                                overall outcome of the project</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>05</h4>
+                            <h5>Constraints</h5>
+                            <h6>From budget, timeline, resources, skillsets and more. In order to meet these constraints
+                                and deliver the project on time, project managers must have a clear understanding of the
+                                requirements and plan accordingly</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>06</h4>
+                            <h5>Brainstorming</h5>
+                            <h6>A five-day workshop to answer crucial business questions, plan the essential features of
+                                your product and reduce the risk of bringing a product to the market.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>07</h4>
+                            <h5>Hypothesis</h5>
+                            <h6>A workshop aimed at shaping your business idea, answering questions regarding project
+                                planning, time estimation and budgeting.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>08</h4>
+                            <h5>Conceptualization</h5>
+                            <h6>An evaluation which will help you radically improve your product by eliminating all UX
+                                issues to get a truly appealing and streamlined experience that users will love.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>09</h4>
+                            <h5>Assumptions</h5>
+                            <h6>Consider the scope and complexity of the task at hand, It help in identifying potential
+                                areas for improvement as well as providing insight into how changes will affect the
+                                overall outcome of the project</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>10</h4>
+                            <h5>Constraints</h5>
+                            <h6>From budget, timeline, resources, skillsets and more. In order to meet these constraints
+                                and deliver the project on time, project managers must have a clear understanding of the
+                                requirements and plan accordingly</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 su-st-wrap py-5">
+            <div class="container position-relative">
+                <div class="row ">
+                    <div class="col-12">
+                        <h5 class="su-st-head">Success stories</h5>
+                        <div class="owl-carousel owl-theme blogbanner">
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Can Chat GPT replace virtual assistants and research engines?</h4>
+                                <p><b>2023 . <i>Automation</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Top skills and technologies to consider learning in 2023?</h4>
+                                <p><b>2023 . <i>Advice</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Which technology trends will dominate in 2023?</h4>
+                                <p><b>2023 . <i>Web Development</i></b><span><img src="images/Vision.png">5,000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="col-12 service-heading">
+                        <h4>04</h4>
+                        <h5>Build</h5>
+                        <h6>impactful mobile application</h6>
+                    </div>
+                    <div class="col-12 col-md-8 serv-con">
+                        <p>Providing battle-tested methodologies guarantees the best possible experience for the users.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-12 service-ex-wrap mt-4">
+                        <div class="exelecnce-box">
+                            <h4>01</h4>
+                            <h5>Brainstorming</h5>
+                            <h6>A five-day workshop to answer crucial business questions, plan the essential features of
+                                your product and reduce the risk of bringing a product to the market.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>02</h4>
+                            <h5>Hypothesis</h5>
+                            <h6>A workshop aimed at shaping your business idea, answering questions regarding project
+                                planning, time estimation and budgeting.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>03</h4>
+                            <h5>Conceptualization</h5>
+                            <h6>An evaluation which will help you radically improve your product by eliminating all UX
+                                issues to get a truly appealing and streamlined experience that users will love.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>04</h4>
+                            <h5>Assumptions</h5>
+                            <h6>Consider the scope and complexity of the task at hand, It help in identifying potential
+                                areas for improvement as well as providing insight into how changes will affect the
+                                overall outcome of the project</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>05</h4>
+                            <h5>Constraints</h5>
+                            <h6>From budget, timeline, resources, skillsets and more. In order to meet these constraints
+                                and deliver the project on time, project managers must have a clear understanding of the
+                                requirements and plan accordingly</h6>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 su-st-wrap py-5">
+            <div class="container position-relative">
+                <div class="row ">
+                    <div class="col-12">
+                        <h5 class="su-st-head">Success stories</h5>
+                        <div class="owl-carousel owl-theme blogbanner">
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Can Chat GPT replace virtual assistants and research engines?</h4>
+                                <p><b>2023 . <i>Automation</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Top skills and technologies to consider learning in 2023?</h4>
+                                <p><b>2023 . <i>Advice</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Which technology trends will dominate in 2023?</h4>
+                                <p><b>2023 . <i>Web Development</i></b><span><img src="images/Vision.png">5,000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="col-12 service-heading">
+                        <h4>04</h4>
+                        <h5>Resources as a service</h5>
+                        <h6>for you</h6>
+                    </div>
+                    <div class="col-12 col-md-8 serv-con">
+                        <p>Spreading yourself too thin? Let our dedicated team handle all your development needs so that
+                            you can put your energy to good use with fewer, more critical stuff.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="hiring-owl">
+                        <div class="hiring-box ser-re-box" style="background: #fff;">
+                            <h6>Time & <span style="color: var(--red);">Material</span></h6>
+                            <p>We welcome the obscure vision through Time and Material Model that supports the Agile
+                                Development Process. This is a model where the client only pays for the time and
+                                resources spent on the project.</p>
+                        </div>
+                        <div class="hiring-box ser-re-box" style="background: #fff;">
+                            <h6>Fix Scope <span style="color:var(--purple)">Model</span></h6>
+                            <p>We welcome the crystal clear vision of our clients and provide the best web and mobile
+                                app solutions through Fix Scope Model. Fix Scope Model is the best model to get the
+                                complete solution under a fixed budget.</p>
+                        </div>
+                        <div class="hiring-box ser-re-box" style="background: #fff;">
+                            <h6>Hire <span style="color:var(--green)">Team</span></h6>
+                            <p>The Extended Team is a model where the client can control the entire development team
+                                remotely. It is cost-effective as the entire team is hired remotely and does not require
+                                the investment in the infrastructure still they have full control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 su-st-wrap py-5">
+            <div class="container position-relative">
+                <div class="row ">
+                    <div class="col-12">
+                        <h5 class="su-st-head">Success stories</h5>
+                        <div class="owl-carousel owl-theme blogbanner">
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Can Chat GPT replace virtual assistants and research engines?</h4>
+                                <p><b>2023 . <i>Automation</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Top skills and technologies to consider learning in 2023?</h4>
+                                <p><b>2023 . <i>Advice</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Which technology trends will dominate in 2023?</h4>
+                                <p><b>2023 . <i>Web Development</i></b><span><img src="images/Vision.png">5,000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="col-12 service-heading">
+                        <h4>04</h4>
+                        <h5>Support and management</h5>
+                        <h6>services</h6>
+                    </div>
+                    <div class="col-12 col-md-8 serv-con">
+                        <p>To develop a successful project is to to meet the ever changing market needs. We are here to
+                            support your growth.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-12 service-ex-wrap mt-4">
+                        <div class="exelecnce-box">
+                            <h4>01</h4>
+                            <h5>Brainstorming</h5>
+                            <h6>A five-day workshop to answer crucial business questions, plan the essential features of
+                                your product and reduce the risk of bringing a product to the market.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>02</h4>
+                            <h5>Hypothesis</h5>
+                            <h6>A workshop aimed at shaping your business idea, answering questions regarding project
+                                planning, time estimation and budgeting.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>03</h4>
+                            <h5>Conceptualization</h5>
+                            <h6>An evaluation which will help you radically improve your product by eliminating all UX
+                                issues to get a truly appealing and streamlined experience that users will love.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>04</h4>
+                            <h5>Assumptions</h5>
+                            <h6>Consider the scope and complexity of the task at hand, It help in identifying potential
+                                areas for improvement as well as providing insight into how changes will affect the
+                                overall outcome of the project</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>05</h4>
+                            <h5>Constraints</h5>
+                            <h6>From budget, timeline, resources, skillsets and more. In order to meet these constraints
+                                and deliver the project on time, project managers must have a clear understanding of the
+                                requirements and plan accordingly</h6>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 su-st-wrap py-5">
+            <div class="container position-relative">
+                <div class="row ">
+                    <div class="col-12">
+                        <h5 class="su-st-head">Success stories</h5>
+                        <div class="owl-carousel owl-theme blogbanner">
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Can Chat GPT replace virtual assistants and research engines?</h4>
+                                <p><b>2023 . <i>Automation</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Top skills and technologies to consider learning in 2023?</h4>
+                                <p><b>2023 . <i>Advice</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Which technology trends will dominate in 2023?</h4>
+                                <p><b>2023 . <i>Web Development</i></b><span><img src="images/Vision.png">5,000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="col-12 service-heading">
+                        <h4>05</h4>
+                        <h5>Digital Marketing</h5>
+                        <h6>services</h6>
+                    </div>
+                    <div class="col-12 col-md-8 serv-con">
+                        <p>Propel your business to new heights with our award-winning digital marketing services.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-12 service-ex-wrap mt-4">
+                        <div class="exelecnce-box">
+                            <h4>01</h4>
+                            <h5>Brainstorming</h5>
+                            <h6>A five-day workshop to answer crucial business questions, plan the essential features of
+                                your product and reduce the risk of bringing a product to the market.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>02</h4>
+                            <h5>Hypothesis</h5>
+                            <h6>A workshop aimed at shaping your business idea, answering questions regarding project
+                                planning, time estimation and budgeting.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>03</h4>
+                            <h5>Conceptualization</h5>
+                            <h6>An evaluation which will help you radically improve your product by eliminating all UX
+                                issues to get a truly appealing and streamlined experience that users will love.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>04</h4>
+                            <h5>Assumptions</h5>
+                            <h6>Consider the scope and complexity of the task at hand, It help in identifying potential
+                                areas for improvement as well as providing insight into how changes will affect the
+                                overall outcome of the project</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>05</h4>
+                            <h5>Constraints</h5>
+                            <h6>From budget, timeline, resources, skillsets and more. In order to meet these constraints
+                                and deliver the project on time, project managers must have a clear understanding of the
+                                requirements and plan accordingly</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>06</h4>
+                            <h5>Brainstorming</h5>
+                            <h6>A five-day workshop to answer crucial business questions, plan the essential features of
+                                your product and reduce the risk of bringing a product to the market.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>07</h4>
+                            <h5>Hypothesis</h5>
+                            <h6>A workshop aimed at shaping your business idea, answering questions regarding project
+                                planning, time estimation and budgeting.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>08</h4>
+                            <h5>Conceptualization</h5>
+                            <h6>An evaluation which will help you radically improve your product by eliminating all UX
+                                issues to get a truly appealing and streamlined experience that users will love.</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>09</h4>
+                            <h5>Assumptions</h5>
+                            <h6>Consider the scope and complexity of the task at hand, It help in identifying potential
+                                areas for improvement as well as providing insight into how changes will affect the
+                                overall outcome of the project</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>10</h4>
+                            <h5>Constraints</h5>
+                            <h6>From budget, timeline, resources, skillsets and more. In order to meet these constraints
+                                and deliver the project on time, project managers must have a clear understanding of the
+                                requirements and plan accordingly</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 su-st-wrap py-5">
+            <div class="container position-relative">
+                <div class="row ">
+                    <div class="col-12">
+                        <h5 class="su-st-head">Success stories</h5>
+                        <div class="owl-carousel owl-theme blogbanner">
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Can Chat GPT replace virtual assistants and research engines?</h4>
+                                <p><b>2023 . <i>Automation</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Top skills and technologies to consider learning in 2023?</h4>
+                                <p><b>2023 . <i>Advice</i></b><span><img src="images/Vision.png">5,000</span></p>
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 64.png">
+                                <h4>Which technology trends will dominate in 2023?</h4>
+                                <p><b>2023 . <i>Web Development</i></b><span><img src="images/Vision.png">5,000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative">
+        <div class="container">
+            <div class="row " style="position: relative;">
+                <div class="col-12 abt-content-grid-wrap client-wrd">
+                    <div class="col-12">
+                        <div class="col-12 main-heaing ">
+                            <h6>words from our clients</h6>
+                            <h2>We believe in building lasting relationships</h2>
+                        </div>
+                        <div class="col-12 content">
+                            <p>We have connected with amazing clients to enable them with all that the digital
+                                revolution has to offer. Seeing our clients passionate about their ideas makes us want
+                                to deliver exceedingly successful mobile applications and websites. And that’s what we
+                                strive to do everyday.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 testi-vdo">
+                        <div>
+                            <img src="images/Rectangle-67.png">
+                            <img src="images/YouTube-Music.png" class="yt">
+                        </div>
+                        <div>
+                            <img src="images/Rectangle-67.png">
+                            <img src="images/YouTube-Music.png" class="yt">
+                        </div>
+                        <div>
+                            <img src="images/Rectangle-67.png">
+                            <img src="images/YouTube-Music.png" class="yt">
+                        </div>
+                        <div>
+                            <img src="images/Rectangle-67.png">
+                            <img src="images/YouTube-Music.png" class="yt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 pt-0 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 start-prjct">
+                    <div>
+                        <h2>Ready to start a project ?</h2>
+                        <p>To start, use form to tell us about you and the project</p>
+                    </div>
+                    <a href="#">Let’s connect</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 ft-lt">
+                    <img src="images/logo.png" class="mb-3">
+                    <ul>
+                        <li>
+                            <p class="mb-0">Get Free Estimation</p>
+                            <a href="#" style="color: var(--red);">hello@webmaa.com</a>
+                            <p class="mb-0 mt-3">Skype</p>
+                            <a href="#" style="color: var(--red);">hello.webmaa</a>
+                        </li>
+                        <li>
+                            <p class="mb-0">Call</p>
+                            <a href="#">+91 9830990076</a>
+                            <a href="#">+91 9836987431</a>
+                        </li>
+                        <li>
+                            <p class="mb-0">
+                                <b>INDIA</b><br>
+                                Minarva Garden,<br>
+                                50, DH Road,<br>
+                                Kolkata 700104, WB,<br>
+                                India
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 ft-lt ft-rt">
+                    <b class="mb-3">Company</b>
+                    <ul>
+                        <li>
+                            <a href="#">About us</a>
+                            <a href="#">Career</a>
+                            <a href="#">Blog</a>
+                            <a href="#">How to engage</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ’s</a>
+                            <a href="#">Policies</a>
+                            <a href="#">Sitemap</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 ft-lt ft-rt">
+                    <b class="mb-3">Digital Acceleration Editorial</b>
+                    <p class="mb-0">Boost innovation with insights for change</p>
+                    <form class="d-flex align-items-center"
+                        style="background: #E1E1E1;height: 43px;padding: 0 9px;border-radius: 5px;margin-top: 5px;">
+                        <input style="padding: 6px;background: transparent;border: none;width: calc(100% - 44px);">
+                        <button
+                            style="padding: 0;background: transparent;border: none;font-family: Poppins;font-size: 12px;font-weight: 600;line-height: 18px;text-align: left;width: 44px;">Submit</button>
+                    </form>
+                    <label class="containe">I agree to receive marketing communication from Webmaa
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 sm-ft">
+                    <p>© 2024 Webmaa. All rights reserved. &nbsp;|&nbsp; <a href="#">Portfolio</a> &nbsp;|&nbsp; <a
+                            href="#">Blog</a> &nbsp;|&nbsp; <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a
+                            href="#">Sitemap</a></p>
+                    <p class="text-md-right">Follow us on<a href="#"><i class="fab fa-linkedin-in"></i></a><a
+                            href="#"><i class="fab fa-dribbble"></i></a><a href="#"><i class="fab fa-github"></i></a><a
+                            href="#"><i class="fab fa-youtube"></i></a><a href="#"><i
+                                class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('.service-owl').owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.recent-owl').owlCarousel({
+        center: true,
+        items: 2,
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+
+    })
+    $('.blogbanner').owlCarousel({
+        loop: false,
+        margin: 15,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.testiowl').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        items: 1,
+    })
+</script>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $('.faq-clk').click(function () {
+            if ($(this).hasClass("active")) {
+                $(".faqx").slideUp();
+                $(".faq-clk").removeClass("active");
+            } else {
+                $(".faqx").slideUp();
+                $(".faq-clk").removeClass("active");
+                $(this).parent().find(".faqx").slideToggle();
+                $(this).parent().find(".faq-clk").toggleClass("active");
+            }
+        });
+    });
+</script>
+
+</html>

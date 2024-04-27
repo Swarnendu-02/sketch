@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WEBMAA</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="fullPage very simple demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,simple" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-5/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responcive.css">
+    <link href="css/owl.carousel.min.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/odometer.css?v=2" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-9 col-md-3" style="display: flex;align-items: center;">
+                    <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                </div>
+                <div class="menu-box col-3 col-md-9 d-flex align-items-center justify-content-end" id="collapsemenu">
+                    <button onclick="$('.navigation').addClass('menu-open');"
+                        style="background:transparent; font-size: 21px; color:var(--purple)"
+                        class="d-md-none main-btn-bk border-0 p-0"><i class="fas fa-bars"></i></button>
+                    <nav class="navigation" id="navigationmenu">
+                        <button class="d-md-none" onclick="$('.navigation').removeClass('menu-open'); $('.sub-menu').slideUp().removeClass('active');
+                    $('.has-drop').removeClass('active-a');"
+                            style="position: absolute;right: 19px;border: 0;background: transparent;color: #000;top: 14px;font-size: 16px;"><i
+                                class="fas fa-arrow-right"></i></button>
+                        <ul>
+                            <li class="mneu-a"><a href="about.html">About</a></li>
+                            <li class="mneu-a"><a href="service.html">Services</a></li>
+                            <li class="mneu-a"><a href="sollution.html">Solutions</a></li>
+                            <li class="mneu-a"><a href="works.html">Works</a></li>
+                            <li class="mneu-a"><a href="hiteteam.html">Hite Team</a></li>
+                            <li class="mneu-a"><a href="blog.html">Blog</a></li>
+                            <li class="mneu-a"><a href="contactus.html"><span>Contact us</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        $(document).ready(function () {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+    </script>
+    <div class="container-fluid py-6 position-relative">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="owl-carousel owl-theme dineinn-owl">
+                    <div class="item">
+                        <div class="recent-box p-0" >
+                            <div class="abt-content-grid-wrap">
+                                <div>
+                                    <div class="col-12 main-heaing">
+                                        <h2>Dine Inn</h2>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a>
+                                                <img src="images/appple.png">
+                                                <span>
+                                                    <i>Available on</i>
+                                                    <b>App Store</b>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <img src="images/google.png">
+                                                <span>
+                                                    <i>Available on</i>
+                                                    <b>Google play</b>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <img src="images/Internet.png">
+                                                <span>
+                                                    <i>Available on</i>
+                                                    <b>website.com</b>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="col-12 abt-info">
+                                        <div class="content">
+                                            <p >Share a Taste of Home with Dine Inn. Codigo partnered Dine Inn as the technical and design consultant to build a platform that bridges hosts and guests to enjoy good food and good times together. Anyone can simply order home-cooked meals via our mobile apps and responsive website 24/7. An intricate logic is implemented to facilitate and accommodate various service types, booking dates & timings, payment between hosts and guests. A fully customised admin panel is also created for the Dine Inn team to manage hosts, guests and bookings to ensure everyone enjoys a great Dine Inn experience.</p>
+                                        </div>
+                                    </div>
+                                    <div class="dine-inn-bottom">
+                                        <p>
+                                            <span>Key Features</span>
+                                            <span>One-stop community connecting makers and lovers of food, Buy, sell, pickup, delivery or catering, Stripe integrated to facilitate split payment to all hosts and Dine Inn</span>
+                                        </p>
+                                        <p>
+                                            <span>Key Features</span>
+                                            <span>One-stop community connecting makers and lovers of food, Buy, sell, pickup, delivery or catering, Stripe integrated to facilitate split payment to all hosts and Dine Inn</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div><img src="images/dinein.png" class="w-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="recent-box p-0" >
+                            <div class="abt-content-grid-wrap">
+                                <div>
+                                    <div class="col-12 main-heaing">
+                                        <h2>Dine Inn</h2>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a>
+                                                <img src="images/appple.png">
+                                                <span>
+                                                    <i>Available on</i>
+                                                    <b>App Store</b>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <img src="images/google.png">
+                                                <span>
+                                                    <i>Available on</i>
+                                                    <b>Google play</b>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <img src="images/Internet.png">
+                                                <span>
+                                                    <i>Available on</i>
+                                                    <b>website.com</b>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="col-12 abt-info">
+                                        <div class="content">
+                                            <p >Share a Taste of Home with Dine Inn. Codigo partnered Dine Inn as the technical and design consultant to build a platform that bridges hosts and guests to enjoy good food and good times together. Anyone can simply order home-cooked meals via our mobile apps and responsive website 24/7. An intricate logic is implemented to facilitate and accommodate various service types, booking dates & timings, payment between hosts and guests. A fully customised admin panel is also created for the Dine Inn team to manage hosts, guests and bookings to ensure everyone enjoys a great Dine Inn experience.</p>
+                                        </div>
+                                    </div>
+                                    <div class="dine-inn-bottom">
+                                        <p>
+                                            <span>Key Features</span>
+                                            <span>One-stop community connecting makers and lovers of food, Buy, sell, pickup, delivery or catering, Stripe integrated to facilitate split payment to all hosts and Dine Inn</span>
+                                        </p>
+                                        <p>
+                                            <span>Key Features</span>
+                                            <span>One-stop community connecting makers and lovers of food, Buy, sell, pickup, delivery or catering, Stripe integrated to facilitate split payment to all hosts and Dine Inn</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div><img src="images/dinein.png" class="w-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 ft-lt">
+                    <img src="images/logo.png" class="mb-3">
+                    <ul>
+                        <li>
+                            <p class="mb-0">Get Free Estimation</p>
+                            <a href="#" style="color: var(--red);">hello@webmaa.com</a>
+                            <p class="mb-0 mt-3">Skype</p>
+                            <a href="#" style="color: var(--red);">hello.webmaa</a>
+                        </li>
+                        <li>
+                            <p class="mb-0">Call</p>
+                            <a href="#">+91 9830990076</a>
+                            <a href="#">+91 9836987431</a>
+                        </li>
+                        <li>
+                            <p class="mb-0">
+                                <b>INDIA</b><br>
+                                Minarva Garden,<br>
+                                50, DH Road,<br>
+                                Kolkata 700104, WB,<br>
+                                India
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 ft-lt ft-rt">
+                    <b class="mb-3">Company</b>
+                    <ul>
+                        <li>
+                            <a href="#">About us</a>
+                            <a href="#">Career</a>
+                            <a href="#">Blog</a>
+                            <a href="#">How to engage</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ’s</a>
+                            <a href="#">Policies</a>
+                            <a href="#">Sitemap</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 ft-lt ft-rt">
+                    <b class="mb-3">Digital Acceleration Editorial</b>
+                    <p class="mb-0">Boost innovation with insights for change</p>
+                    <form class="d-flex align-items-center"
+                        style="background: #E1E1E1;height: 43px;padding: 0 9px;border-radius: 5px;margin-top: 5px;">
+                        <input style="padding: 6px;background: transparent;border: none;width: calc(100% - 44px);">
+                        <button
+                            style="padding: 0;background: transparent;border: none;font-family: Poppins;font-size: 12px;font-weight: 600;line-height: 18px;text-align: left;width: 44px;">Submit</button>
+                    </form>
+                    <label class="containe">I agree to receive marketing communication from Webmaa
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 sm-ft">
+                    <p>© 2024 Webmaa. All rights reserved. &nbsp;|&nbsp; <a href="#">Portfolio</a> &nbsp;|&nbsp; <a
+                            href="#">Blog</a> &nbsp;|&nbsp; <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a
+                            href="#">Sitemap</a></p>
+                    <p class="text-md-right">Follow us on<a href="#"><i class="fab fa-linkedin-in"></i></a><a
+                            href="#"><i class="fab fa-dribbble"></i></a><a href="#"><i class="fab fa-github"></i></a><a
+                            href="#"><i class="fab fa-youtube"></i></a><a href="#"><i
+                                class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('.dineinn-owl').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        items: 1,
+    })
+    $('.recent-owl').owlCarousel({
+        center: true,
+        items: 2,
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+
+    })
+    $('.blogbanner').owlCarousel({
+        loop: false,
+        margin: 15,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.testiowl').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        items: 1,
+    })
+</script>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $('.faq-clk').click(function () {
+            if ($(this).hasClass("active")) {
+                $(".faqx").slideUp();
+                $(".faq-clk").removeClass("active");
+            } else {
+                $(".faqx").slideUp();
+                $(".faq-clk").removeClass("active");
+                $(this).parent().find(".faqx").slideToggle();
+                $(this).parent().find(".faq-clk").toggleClass("active");
+            }
+        });
+    });
+</script>
+
+</html>

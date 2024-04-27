@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WEBMAA</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="fullPage very simple demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,simple" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-5/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responcive.css">
+    <link href="css/owl.carousel.min.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/odometer.css?v=2" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-9 col-md-3" style="display: flex;align-items: center;">
+                    <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                </div>
+                <div class="menu-box col-3 col-md-9 d-flex align-items-center justify-content-end" id="collapsemenu">
+                    <button onclick="$('.navigation').addClass('menu-open');"
+                        style="background:transparent; font-size: 21px; color:var(--purple)"
+                        class="d-md-none main-btn-bk border-0 p-0"><i class="fas fa-bars"></i></button>
+                    <nav class="navigation" id="navigationmenu">
+                        <button class="d-md-none" onclick="$('.navigation').removeClass('menu-open'); $('.sub-menu').slideUp().removeClass('active');
+                    $('.has-drop').removeClass('active-a');"
+                            style="position: absolute;right: 19px;border: 0;background: transparent;color: #000;top: 14px;font-size: 16px;"><i
+                                class="fas fa-arrow-right"></i></button>
+                        <ul>
+                            <li class="mneu-a"><a href="about.html">About</a></li>
+                            <li class="mneu-a"><a href="service.html">Services</a></li>
+                            <li class="mneu-a"><a href="sollution.html">Solutions</a></li>
+                            <li class="mneu-a"><a href="works.html">Works</a></li>
+                            <li class="mneu-a"><a href="hiteteam.html">Hite Team</a></li>
+                            <li class="mneu-a"><a href="blog.html">Blog</a></li>
+                            <li class="mneu-a"><a href="contactus.html"><span>Contact us</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        $(document).ready(function () {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+    </script>
+    <div class="container-fluid banner service-banner bk-cl p-0 position-relative">
+        <div class="container position-relative h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md-10 offset-md-1">
+                    <h2><span style="color: var(--green);">Dedicated engagement</span> model for evolving scope</h2>
+                    <p class="con">With multiple engagement models in place, we noted a factor considered by our 3000+
+                        clients while choosing the RIGHT MODEL. That is, how much control and understanding they have
+                        with the present scope of work. Choosing the right model via expert consultation really makes a
+                        difference, believe it or not!!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 col-md-10 offset-md-1 main-heaing">
+                    <h2 class="text-center">Why should you hire a dedicated team?</h2>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 content" style="font-weight: 500;">
+                    <p class="text-center">Dedicated teams or HIRE Model approach in simple terms is about choosing and
+                        creating your own team to work on your software development project so that you remain focused
+                        on core business areas. You can hire them on a full time, part-time or hourly basis, from a
+                        single developer to a team of developers, that shall be working independently or in conjunction
+                        with another team(s).</p>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 content mt-4">
+                    <p class="text-center">With effective collaboration, a dedicated software development team can have
+                        clear insights about the project objective. The business vision and goals about what your END
+                        users are expected to get are explained in advance along with a roadmap on project management –
+                        from the kickoff to delivery.
+                        And from our 20+ years of experience, we can guarantee that this approach increases efficiency,
+                        quality and timely delivery of the project by a great deal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 col-md-10 offset-md-1 main-heaing">
+                    <h2 class="text-center">Numbers Speak for Themselves</h2>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 content">
+                    <p class="text-center">IBM Study found that fuzzy business objectives, out-of-sync stakeholders, and
+                        excessive
+                        rework mean that 75% of project participants lack confidence that their projects will
+                        succeed. To add more, the report says:</p>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 mt-4 abt-content-grid-wrap">
+                    <ul class="numberspk">
+                        <li>Only 2.5% companies complete 100% of their projects</li>
+                        <li>57% projects fail due to “breakdown in communication”</li>
+                        <li>Only 40% projects meet milestones, budget and quality goals</li>
+                    </ul>
+                    <div>
+                        <img src="images/hitrt.png" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 col-md-10 offset-md-1 main-heaing">
+                    <h2 class="text-center">What we provide? Our Hiring Models</h2>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 content">
+                    <p class="text-center">To meet various project needs for any size of business, IndiaNIC offers
+                        full-time, part time and hourly hiring for dedicated development projects. Have a look at the
+                        engagement models that results in meeting various business demands.</p>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 mt-4">
+                    <div class="hiri-mode-wrap">
+                        <div class="hiri-mode-box">
+                            <h4>Full Time</h4>
+                            <p>8 hours/day | 5days/week</p>
+                        </div>
+                        <div class="hiri-mode-box">
+                            <h4>Full Time</h4>
+                            <p>8 hours/day | 5days/week</p>
+                        </div>
+                        <div class="hiri-mode-box">
+                            <h4>Full Time</h4>
+                            <p>8 hours/day | 5days/week</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 col-md-10 offset-md-1 main-heaing">
+                    <h2 class="text-center">Onboard Process</h2>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 mt-4">
+                    <div class="row on-proc-wrap">
+                        <div class="col-12 col-md-4 on-proc-box">
+                            <div class="exelecnce-box">
+                                <h4>01</h4>
+                                <h5>Send us a Request</h5>
+                                <h6>Contact us and we will get back to you instantly or within 24 hours to know about
+                                    your project needs, target areas, users, tech stack and other possible nuances to
+                                    come up with precise suggestions.</h6>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 on-proc-box">
+                            <div class="exelecnce-box">
+                                <h4>02</h4>
+                                <h5>Send us a Request</h5>
+                                <h6>Contact us and we will get back to you instantly or within 24 hours to know about
+                                    your project needs, target areas, users, tech stack and other possible nuances to
+                                    come up with precise suggestions.</h6>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 on-proc-box">
+                            <div class="exelecnce-box">
+                                <h4>03</h4>
+                                <h5>Send us a Request</h5>
+                                <h6>Contact us and we will get back to you instantly or within 24 hours to know about
+                                    your project needs, target areas, users, tech stack and other possible nuances to
+                                    come up with precise suggestions.</h6>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 on-proc-box">
+                            <div class="exelecnce-box">
+                                <h4>04</h4>
+                                <h5>Send us a Request</h5>
+                                <h6>Contact us and we will get back to you instantly or within 24 hours to know about
+                                    your project needs, target areas, users, tech stack and other possible nuances to
+                                    come up with precise suggestions.</h6>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 on-proc-box">
+                            <div class="exelecnce-box">
+                                <h4>05</h4>
+                                <h5>Send us a Request</h5>
+                                <h6>Contact us and we will get back to you instantly or within 24 hours to know about
+                                    your project needs, target areas, users, tech stack and other possible nuances to
+                                    come up with precise suggestions.</h6>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 on-proc-box">
+                            <div class="exelecnce-box">
+                                <h4>06</h4>
+                                <h5>Send us a Request</h5>
+                                <h6>Contact us and we will get back to you instantly or within 24 hours to know about
+                                    your project needs, target areas, users, tech stack and other possible nuances to
+                                    come up with precise suggestions.</h6>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 on-proc-box">
+                            <div class="exelecnce-box">
+                                <h4>07</h4>
+                                <h5>Send us a Request</h5>
+                                <h6>Contact us and we will get back to you instantly or within 24 hours to know about
+                                    your project needs, target areas, users, tech stack and other possible nuances to
+                                    come up with precise suggestions.</h6>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 on-proc-box">
+                            <div class="exelecnce-box h-100">
+                                <h3>Things you will always love to have in your journey </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 col-md-10 offset-md-1 main-heaing">
+                    <h2 class="text-center">Onboard Process</h2>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 mt-4">
+                    <div class="row on-proc-wrap">
+                        <div class="col-12 col-md-4 adv-hir ">
+                            <div>
+                                <img src="images/team1.png">
+                                <h4>Direct Communication</h4>
+                                <p>You will get complete access to talk with the chosen developers at all times through
+                                    Skype, email and phone with scheduled audio/video conferencing to overcome the
+                                    communication barrier.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 adv-hir ">
+                            <div>
+                                <img src="images/team2.png">
+                                <h4>Direct Communication</h4>
+                                <p>You will get complete access to talk with the chosen developers at all times through
+                                    Skype, email and phone with scheduled audio/video conferencing to overcome the
+                                    communication barrier.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 adv-hir ">
+                            <div>
+                                <img src="images/team3.png">
+                                <h4>Direct Communication</h4>
+                                <p>You will get complete access to talk with the chosen developers at all times through
+                                    Skype, email and phone with scheduled audio/video conferencing to overcome the
+                                    communication barrier.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 adv-hir ">
+                            <div>
+                                <img src="images/team4.png">
+                                <h4>Direct Communication</h4>
+                                <p>You will get complete access to talk with the chosen developers at all times through
+                                    Skype, email and phone with scheduled audio/video conferencing to overcome the
+                                    communication barrier.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 adv-hir ">
+                            <div>
+                                <img src="images/team5.png">
+                                <h4>Direct Communication</h4>
+                                <p>You will get complete access to talk with the chosen developers at all times through
+                                    Skype, email and phone with scheduled audio/video conferencing to overcome the
+                                    communication barrier.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 adv-hir ">
+                            <div>
+                                <img src="images/team6.png">
+                                <h4>Direct Communication</h4>
+                                <p>You will get complete access to talk with the chosen developers at all times through
+                                    Skype, email and phone with scheduled audio/video conferencing to overcome the
+                                    communication barrier.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative">
+        <div class="container">
+            <div class="row " style="position: relative;">
+                <div class="col-12 main-heaing ">
+                    <h2 class="text-center">Frequently asked questions</h2>
+                </div>
+                <ul class="faq-wrap col-12 col-md-10 offset-md-1 mt-4">
+                    <li>
+                        <h6 class="faq-clk">What do I do if my vision changes after we’ve already started the project ?<img src="images/plus.png"></h6>
+                        <div class="faqx" style="display: none;">
+                            <p>lorem</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h6 class="faq-clk">What do I do if my vision changes after we’ve already started the project ?<img src="images/plus.png"></h6>
+                        <div class="faqx">
+                            <p>lorem</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 pt-0 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 start-prjct">
+                    <div>
+                        <h2>Hire a Team ?</h2>
+                        <p>To start, use form to tell us about you and the project</p>
+                    </div>
+                    <a href="#">Let’s connect</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 ft-lt">
+                    <img src="images/logo.png" class="mb-3">
+                    <ul>
+                        <li>
+                            <p class="mb-0">Get Free Estimation</p>
+                            <a href="#" style="color: var(--red);">hello@webmaa.com</a>
+                            <p class="mb-0 mt-3">Skype</p>
+                            <a href="#" style="color: var(--red);">hello.webmaa</a>
+                        </li>
+                        <li>
+                            <p class="mb-0">Call</p>
+                            <a href="#">+91 9830990076</a>
+                            <a href="#">+91 9836987431</a>
+                        </li>
+                        <li>
+                            <p class="mb-0">
+                                <b>INDIA</b><br>
+                                Minarva Garden,<br>
+                                50, DH Road,<br>
+                                Kolkata 700104, WB,<br>
+                                India
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 ft-lt ft-rt">
+                    <b class="mb-3">Company</b>
+                    <ul>
+                        <li>
+                            <a href="#">About us</a>
+                            <a href="#">Career</a>
+                            <a href="#">Blog</a>
+                            <a href="#">How to engage</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ’s</a>
+                            <a href="#">Policies</a>
+                            <a href="#">Sitemap</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 ft-lt ft-rt">
+                    <b class="mb-3">Digital Acceleration Editorial</b>
+                    <p class="mb-0">Boost innovation with insights for change</p>
+                    <form class="d-flex align-items-center"
+                        style="background: #E1E1E1;height: 43px;padding: 0 9px;border-radius: 5px;margin-top: 5px;">
+                        <input style="padding: 6px;background: transparent;border: none;width: calc(100% - 44px);">
+                        <button
+                            style="padding: 0;background: transparent;border: none;font-family: Poppins;font-size: 12px;font-weight: 600;line-height: 18px;text-align: left;width: 44px;">Submit</button>
+                    </form>
+                    <label class="containe">I agree to receive marketing communication from Webmaa
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 sm-ft">
+                    <p>© 2024 Webmaa. All rights reserved. &nbsp;|&nbsp; <a href="#">Portfolio</a> &nbsp;|&nbsp; <a href="#">Blog</a> &nbsp;|&nbsp; <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Sitemap</a></p>
+                    <p class="text-md-right">Follow us on<a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-dribbble"></i></a><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('.service-owl').owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.recent-owl').owlCarousel({
+        center: true,
+        items: 2,
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+
+    })
+    $('.blogbanner').owlCarousel({
+        loop: false,
+        margin: 15,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.testiowl').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        items: 1,
+    })
+</script>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $('.faq-clk').click(function () {
+            if ($(this).hasClass("active")) {
+                $(".faqx").slideUp();
+                $(".faq-clk").removeClass("active");
+            } else {
+                $(".faqx").slideUp();
+                $(".faq-clk").removeClass("active");
+                $(this).parent().find(".faqx").slideToggle();
+                $(this).parent().find(".faq-clk").toggleClass("active");
+            }
+        });
+    });
+</script>
+
+</html>

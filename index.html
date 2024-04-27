@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WEBMAA</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="fullPage very simple demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,simple" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-5/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responcive.css">
+    <link href="css/owl.carousel.min.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/odometer.css?v=2" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+</head>
+
+<body> 
+    <header class="container-fluid">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-9 col-md-3" style="display: flex;align-items: center;">
+                    <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                </div>
+                <div class="menu-box col-3 col-md-9 d-flex align-items-center justify-content-end" id="collapsemenu">
+                    <button onclick="$('.navigation').addClass('menu-open');" style="background:transparent; font-size: 21px; color:var(--purple)" class="d-md-none main-btn-bk border-0 p-0"><i class="fas fa-bars"></i></button>
+                    <nav class="navigation" id="navigationmenu">
+                        <button class="d-md-none" onclick="$('.navigation').removeClass('menu-open'); $('.sub-menu').slideUp().removeClass('active');
+                    $('.has-drop').removeClass('active-a');" style="position: absolute;right: 19px;border: 0;background: transparent;color: #000;top: 14px;font-size: 16px;"><i class="fas fa-arrow-right"></i></button>
+                        <ul>
+                            <li class="mneu-a"><a href="about.html">About</a></li>
+                            <li class="mneu-a"><a href="service.html">Services</a></li>
+                            <li class="mneu-a"><a href="sollution.html">Solutions</a></li>
+                            <li class="mneu-a"><a href="works.html">Works</a></li>
+                            <li class="mneu-a"><a href="hiteteam.html">Hite Team</a></li>
+                            <li class="mneu-a"><a href="blog.html">Blog</a></li>
+                            <li class="mneu-a"><a href="contactus.html"><span>Contact us</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        $(document).ready(function() {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+    </script>
+    <div class="container-fluid banner p-0 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>We build <span style="color: var(--purple);">software</span><br>that are <span style=" color: var(--red);">scalable</span> and <span style="color: var(--green);">reliable</span><br>in all work environment</h2>
+                    <h3>
+                        <span><span>.</span>Discover</span>
+                        <span><span style="color: var(--red);">.</span>Design</span>
+                        <span><span style="color: var(--purple);">.</span>Build</span>
+                        <span><span style="color: var(--green);">.</span>Deliver</span>
+                        <span><span style="color: var(--yellow);">.</span>Scale up</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid banner-logo position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="ourbrand">
+                        <div class="item"><img src="images/image 12.png"></div>
+                        <div class="item"><img src="images/image 13.png"></div>
+                        <div class="item"><img src="images/image 14.png"></div>
+                        <div class="item"><img src="images/image 15.png"></div>
+                        <div class="item"><img src="images/image 16.png"></div>
+                        <div class="item"><img src="images/image 17.png"></div>
+                        <div class="item"><img src="images/image 31.png"></div>
+                        <div class="item"><img src="images/image 32.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 abt-content-grid-wrap">
+                    <div>
+                        <div class="col-12 main-heaing">
+                            <h6>Who we are</h6>
+                            <h2>Your digital partner to create inspirational design and robust solution for Web, Mobile & Cloud.</h2>
+                        </div>
+                        <div class="col-12 abt-info">
+                            <div class="content">
+                                <p>The top-notch and preeminent Web and Mobile App Development Company of India with its global presence in USA, Techlu is first-rate choice of the clients worldwide. With sheer customer satisfaction in mind, we are profoundly dedicated to developing highly intriguing apps that strictly meet the business requirements and catering a wide spectrum of projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/who.png" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 main-heaing ">
+                    <h6 class="text-center">services we offer</h6>
+                    <h2 class="text-center">Offshore software development company since 2008, providing a full range of web and mobile app development and IT services and solutions globally.</h2>
+                </div>
+                <div class="col-12 mt-3">
+                    <div class="owl-carousel owl-theme service-owl">
+                        <div class="item">
+                            <div class="service-box">
+                                <h6>Ideation & <span style="color: var(--red);">Evaluation</span></h6>
+                                <p>No matter if you need to craft the idea for a completely new product or evaluate the quality of an already existing one - we're here to help you.</p>
+                                <ul>
+                                    <li>Design Sprint</li>
+                                    <li>Design Sprint</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="service-box">
+                                <h6>Product <span style="color: var(--red);">Design services</span></h6>
+                                <p>No matter if you need to craft the idea for a completely new product or evaluate the quality of an already existing one - we're here to help you.</p>
+                                <ul>
+                                    <li>Design Sprint</li>
+                                    <li>Design Sprint</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="service-box">
+                                <h6>Web App <span style="color: var(--red);">Development</span></h6>
+                                <p>No matter if you need to craft the idea for a completely new product or evaluate the quality of an already existing one - we're here to help you.</p>
+                                <ul>
+                                    <li>Design Sprint</li>
+                                    <li>Design Sprint</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="service-box">
+                                <h6>Web App <span style="color: var(--red);">Development</span></h6>
+                                <p>No matter if you need to craft the idea for a completely new product or evaluate the quality of an already existing one - we're here to help you.</p>
+                                <ul>
+                                    <li>Design Sprint</li>
+                                    <li>Design Sprint</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 main-heaing">
+                    <h6>industry wise solutions</h6>
+                    <h2>Since 1997, Sketch Web has aspired global businesses to use the technologies of today to build a better tomorrow. Let us shake hands and gain immediate access to our top tech talent, like your own team, for building great software solutions.</h2>
+                </div>
+                <div class="col-12 abt-content-grid-wrap mt-4">
+                    <div class="col-12 sollution-lt ">
+                        <ul>
+                            <li>E-Commerce</li>
+                            <li>Social Networking</li>
+                            <li>Healthcare</li>
+                            <li>Government</li>
+                            <li>Business</li>
+                            <li>Fitness</li>
+                            <li>Food Delivery</li>
+                            <li>Delivery Network</li>
+                            <li>Real Estate</li>
+                            <li>Retail</li>
+                            <li>Entertainment</li>
+                            <li>Travel</li>
+                            <li>Education</li>
+                            <li>Sports</li>
+
+                        </ul>
+                    </div>
+                    <div><img src="images/sollution.png" class="w-100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 col-md-10 main-heaing">
+                    <h6>recent works</h6>
+                    <h2>Here’s 5% of our published work.<br><span style="color: var(--red);">See 100% of our power.</span></h2>
+                </div>
+
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme recent-owl">
+                        <div class="item">
+                            <div class="recent-box d-none" style="background: var(--green);">
+                                <div class="abt-content-grid-wrap">
+                                    <div>
+                                        <div class="col-12 main-heaing">
+                                            <h6 class="text-white">ridewise</h6>
+                                            <h5>Delivery management system for small restaurants and business owners</h5>
+                                        </div>
+                                        <div class="col-12 abt-info">
+                                            <div class="content">
+                                                <p class="text-white">Technologies Used : LAMP, CI, Android, iOS, NodeJs</p>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <img src="images/appple.png">
+                                                    <span>
+                                                        <i>Available on</i>
+                                                        <b>App Store</b>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <img src="images/google.png">
+                                                    <span>
+                                                        <i>Available on</i>
+                                                        <b>Google play</b>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <img src="images/Internet.png">
+                                                    <span>
+                                                        <i>Available on</i>
+                                                        <b>website.com</b>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div><img src="images/work1.png" class="rt-img"></div>
+                                </div>
+                            </div>
+                            <img src="images/work3.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/work2.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/work1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 main-heaing">
+                    <h6 class="text-center">hiring models</h6>
+                    <h4 class="text-center">No matter what technology you’re working on, we have a team of offshore dedicated development experts that possess expertise in all the major technologies. Over the years these freelance offshore developers have successfully built solutions based on various technologies.</h4>
+                </div>
+                <div class="col-12">
+                    <div class="hiring-owl">
+                        <div class="hiring-box" style="background: #F6F1F1;">
+                            <h6>Time & <span style="color: var(--red);">Material</span></h6>
+                            <p>We welcome the obscure vision through Time and Material Model that supports the Agile Development Process. This is a model where the client only pays for the time and resources spent on the project.</p>
+                        </div>
+                        <div class="hiring-box" style="background: #F1F5F6;">
+                            <h6>Fix Scope <span style="color:var(--purple)">Model</span></h6>
+                            <p>We welcome the crystal clear vision of our clients and provide the best web and mobile app solutions through Fix Scope Model. Fix Scope Model is the best model to get the complete solution under a fixed budget.</p>
+                        </div>
+                        <div class="hiring-box" style="background: #EFFBF2;">
+                            <h6>Hire <span style="color:var(--green)">Team</span></h6>
+                            <p>The Extended Team is a model where the client can control the entire development team remotely. It is cost-effective as the entire team is hired remotely and does not require the investment in the infrastructure still they have full control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative">
+        <div class="container">
+            <div class="row " style="position: relative;">
+                <div class="col-12 col-md-10 main-heaing ">
+                    <h6>testimonials</h6>
+                    <h2>Leading companies and renowned brands chose us to build and scale their digital products.</h2>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="testi-logo testi-logo-more">
+                        <div><img src="images/image-19.png"></div>
+                        <div><img src="images/cocal.png"></div>
+                        <div><img src="images/ashokstamv.png"></div>
+                        <div><img src="images/bisbangla.png"></div>
+                        <div><img src="images/univer.png"></div>
+                        <div><img src="images/image-19.png"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3 ">
+                    <div class="col-12 owl-carousel owl-theme testiowl testi-owl-box">
+                        <div class="item">
+                            <p>"The best agency we’ve worked with so far. Sketch Web understands our product and is able to add new features with a great focus on speed to market."</p>
+                            <h6><b>Adi Pavlovic</b> | Director of Innovation at Keller Williams</h6>
+                        </div>
+                        <div class="item">
+                            <p>"The best agency we’ve worked with so far. Sketch Web understands our product and is able to add new features with a great focus on speed to market."</p>
+                            <h6><b>Adi Pavlovic</b> | Director of Innovation at Keller Williams</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3 testi-vdo">
+                    <div>
+                        <img src="images/test1.png">
+                        <img src="images/YouTube-Music.png" class="yt">
+                    </div>
+                    <div>
+                        <img src="images/test2.png">
+                        <img src="images/YouTube-Music.png" class="yt">
+                    </div>
+                    <div>
+                        <img src="images/Rectangle-67.png">
+                        <img src="images/YouTube-Music.png" class="yt">
+                    </div>
+                    <div>
+                        <img src="images/test3.png">
+                        <img src="images/YouTube-Music.png" class="yt">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-6 position-relative">
+        <div class="container">
+            <div class="row " style="position: relative;">
+                <div class="col-12 main-heaing ">
+                    <h2 class="text-center">Frequently asked questions</h2>
+                </div>
+                <ul class="faq-wrap col-12 col-md-10 offset-md-1 mt-4">
+                    <li>
+                        <h6 class="faq-clk">What do I do if my vision changes after we’ve already started the project ?<img src="images/plus.png"></h6>
+                        <div class="faqx" style="display: none;">
+                            <p>lorem</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h6 class="faq-clk">What do I do if my vision changes after we’ve already started the project ?<img src="images/plus.png"></h6>
+                        <div class="faqx">
+                            <p>lorem</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  position-relative">
+        <div class="container">
+            <div class="row " style="position: relative;">
+                <div class="col-12 col-md-10  main-heaing ">
+                    <h6>news & blog</h6>
+                    <h2>Find the latest industry trends, to keep you at the top of your tech game. All curated by a top app development agency, <a><u>read more on our blog</u></a>.</h2>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="owl-carousel owl-theme blogbanner">
+                        <div class="item">
+                            <img src="images/Rectangle 64.png">
+                            <h4>Can Chat GPT replace virtual assistants and research engines?</h4>
+                            <p><b>2023 . <i>Automation</i></b><span><img src="images/Vision.png">5,000</span></p>
+                        </div>
+                        <div class="item">
+                            <img src="images/bl-2.png">
+                            <h4>Top skills and technologies to consider learning in 2023?</h4>
+                            <p><b>2023 . <i>Advice</i></b><span><img src="images/Vision.png">5,000</span></p>
+                        </div>
+                        <div class="item">
+                            <img src="images/bl3.png">
+                            <h4>Whicha technology trends will dominate in 2023?</h4>
+                            <p><b>2023 . <i>Web Development</i></b><span><img src="images/Vision.png">5,000</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6  position-relative">
+        <div class="container">
+            <div class="row " style="position: relative;">
+
+                <div class="col-12 col-md-6">
+                    <div class="col-12 main-heaing">
+                        <h6>say hello</h6>
+                        <h3>We’d love to hear from you. Get Custom Solutions, Recommendations, Resumes, or, Estimates with Confidentiality & Same Day Response Guaranteed!</h3>
+                    </div>
+                    <div class="col-12 abt-info">
+                        <div class="content">
+                            <p>Before we start, we would like to better understand your needs. We’ll review your application and schedule a free estimation call.<br><br>Please fill in the form or mail us your requirements to <a>info@sketchwebsolutions.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 testi-owl-box">
+                        <div class="owl-carousel owl-theme testiowl">
+                            <div class="item">
+                                <p>"The best agency we’ve worked with so far. Sketch Web understands our product and is able to add new features with a great focus on speed to market."</p>
+                                <h6><b>Adi Pavlovic</b> | Director of Innovation at Keller Williams</h6>
+                            </div>
+                            <div class="item">
+                                <p>"The best agency we’ve worked with so far. Sketch Web understands our product and is able to add new features with a great focus on speed to market."</p>
+                                <h6><b>Adi Pavlovic</b> | Director of Innovation at Keller Williams</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-logo">
+                        <div><img src="images/image-19.png"></div>
+                        <div><img src="images/cocal.png"></div>
+                        <div><img src="images/image-19.png"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="testi-owl-box">
+                        <form class="contact-frm row">
+                            <div class="form-group col-12 col-md-6">
+                                <label>Name</label>
+                                <input type="text" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                            <div class="form-group col-12">
+                                <label>Email</label>
+                                <input type="text" placeholder="Email Id">
+                            </div>
+                            <div class="form-group col-12">
+                                <label>Mobile Phone</label>
+                                <input type="text" placeholder="Mobile Number">
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label>Budget</label>
+                                <select>
+                                    <option>Select</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label>How soon you want to start</label>
+                                <select>
+                                    <option>Select</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12">
+                                <label>Requirement</label>
+                                <select>
+                                    <option>Select</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12">
+                                <label>Brief about the project</label>
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group col-12">
+                                <label>Have a file to share</label>
+                                <input type="file" id="file" class="d-none">
+                                <label for="file" class="input">Select or drop your file here</label>
+                                <span>Only Document, Image or ZIP file. Max size 8MB</span>
+                            </div>
+                            <div class="form-group col-12 d-md-flex align-items-center">
+                                <button type="submit">Let’s connect</button>
+                                <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-12 col-md-6 ft-lt">
+                    <img src="images/logo.png" class="mb-3">
+                    <ul>
+                        <li>
+                            <p class="mb-0">Get Free Estimation</p>
+                            <a href="#" style="color: var(--red);">hello@webmaa.com</a>
+                            <p class="mb-0 mt-3">Skype</p>
+                            <a href="#" style="color: var(--red);">hello.webmaa</a>
+                        </li>
+                        <li>
+                            <p class="mb-0">Call</p>
+                            <a href="#">+91 9830990076</a>
+                            <a href="#">+91 9836987431</a>
+                        </li>
+                        <li>
+                            <p class="mb-0">
+                                <b>INDIA</b><br>
+                                Minarva Garden,<br>
+                                50, DH Road,<br>
+                                Kolkata 700104, WB,<br>
+                                India
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 ft-lt ft-rt">
+                    <b class="mb-3">Company</b>
+                    <ul>
+                        <li>
+                            <a href="#">About us</a>
+                            <a href="#">Career</a>
+                            <a href="#">Blog</a>
+                            <a href="#">How to engage</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ’s</a>
+                            <a href="#">Policies</a>
+                            <a href="#">Sitemap</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 ft-lt ft-rt">
+                    <b class="mb-3">Digital Acceleration Editorial</b>
+                    <p class="mb-0">Boost innovation with insights for change</p>
+                    <form class="d-flex align-items-center" style="background: #E1E1E1;height: 43px;padding: 0 9px;border-radius: 5px;margin-top: 5px;">
+                        <input style="padding: 6px;background: transparent;border: none;width: calc(100% - 44px);">
+                        <button style="padding: 0;background: transparent;border: none;font-family: Poppins;font-size: 12px;font-weight: 600;line-height: 18px;text-align: left;width: 44px;">Submit</button>
+                    </form>
+                    <label class="containe">I agree to receive marketing communication from Webmaa
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 sm-ft">
+                    <p>© 2024 Webmaa. All rights reserved. &nbsp;|&nbsp; <a href="#">Portfolio</a> &nbsp;|&nbsp; <a href="#">Blog</a> &nbsp;|&nbsp; <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Sitemap</a></p>
+                    <p class="text-md-right">Follow us on<a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-dribbble"></i></a><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('.service-owl').owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.recent-owl').owlCarousel({
+        loop: false,
+        margin: 0,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+    $('.blogbanner').owlCarousel({
+        loop: false,
+        margin: 15,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.testiowl').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        items: 1,
+    })
+</script>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+<script>
+    $(document).ready(function() {
+        $('.faq-clk').click(function() {
+            if ($(this).hasClass("active")) {
+                $(".faqx").slideUp();
+                $(".faq-clk").removeClass("active");
+            } else {
+                $(".faqx").slideUp();
+                $(".faq-clk").removeClass("active");
+                $(this).parent().find(".faqx").slideToggle();
+                $(this).parent().find(".faq-clk").toggleClass("active");
+            }
+        });
+    });
+</script>
+
+</html>

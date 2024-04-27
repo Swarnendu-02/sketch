@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WEBMAA</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="fullPage very simple demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,simple" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-5/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responcive.css">
+    <link href="css/owl.carousel.min.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/odometer.css?v=2" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-9 col-md-3" style="display: flex;align-items: center;">
+                    <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                </div>
+                <div class="menu-box col-3 col-md-9 d-flex align-items-center justify-content-end" id="collapsemenu">
+                    <button onclick="$('.navigation').addClass('menu-open');"
+                        style="background:transparent; font-size: 21px; color:var(--purple)"
+                        class="d-md-none main-btn-bk border-0 p-0"><i class="fas fa-bars"></i></button>
+                    <nav class="navigation" id="navigationmenu">
+                        <button class="d-md-none" onclick="$('.navigation').removeClass('menu-open'); $('.sub-menu').slideUp().removeClass('active');
+                    $('.has-drop').removeClass('active-a');"
+                            style="position: absolute;right: 19px;border: 0;background: transparent;color: #000;top: 14px;font-size: 16px;"><i
+                                class="fas fa-arrow-right"></i></button>
+                        <ul>
+                            <li class="mneu-a"><a href="about.html">About</a></li>
+                            <li class="mneu-a"><a href="service.html">Services</a></li>
+                            <li class="mneu-a"><a href="sollution.html">Solutions</a></li>
+                            <li class="mneu-a"><a href="works.html">Works</a></li>
+                            <li class="mneu-a"><a href="hiteteam.html">Hite Team</a></li>
+                            <li class="mneu-a"><a href="blog.html">Blog</a></li>
+                            <li class="mneu-a"><a href="contactus.html"><span>Contact us</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        $(document).ready(function () {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+    </script>
+    <div class="container-fluid banner banner-abt p-0 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>Innovation-driven software agency delivering apps on demand since 2009.</p>
+                    <h2>We craft <span style="color: var(--purple);">apps</span> and <span
+                            style="color: var(--red);">digital experiences</span> for enterprises, mid-size companies,
+                        and startups.</h2>
+                    <button>Let’s work together!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 col-md-10 main-heaing">
+                    <h6>What we believe in</h6>
+                    <h2>We believe in people and technology, the never ending self-improvement that pushes us toward
+                        excellence.</h2>
+                </div>
+                <div class="col-12 col-md-10 content">
+                    <p>After all those years on the market, we have learned that life is too short for building software
+                        no one needs and no one will use. Before starting a new partnership, we don't ask if the project
+                        is feasible. We want to know if it's desirable, will it make a difference.</p>
+                </div>
+                <div class="col-12">
+                    <div class="hiring-owl belive-owl">
+                        <div class="hiring-box">
+                            <h6>Curiosity</h6>
+                            <p>We're a bunch of curious minds, always on a hunt for information and novelty, which
+                                allows us to innovate and exceed the expectations of our clients.</p>
+                        </div>
+                        <div class="hiring-box">
+                            <h6>Leadership</h6>
+                            <p>We create an inspiring environment where our clients and employees can reach their
+                                potential. We challenge the status quo and help others grow.</p>
+                        </div>
+                        <div class="hiring-box">
+                            <h6>Relation - orientation</h6>
+                            <p>Our team is like a close family, our clients are like relatives. We make sure that our
+                                relationships result in supportive partnerships.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 content mt-4">
+                    <p>We understand that delivering outstanding products requires very precise software development
+                        cycles and skills. We're meticulous and proud of it!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme recent-owl ">
+                        <div class="item">
+                            <img src="images/ac16c0be3420216802a5637a2f631066.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/ac16c0be3420216802a5637a2f631066.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/ac16c0be3420216802a5637a2f631066.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative">
+        <div class="container">
+            <div class="row " style="position: relative;">
+                <div class="col-12 col-md-10 main-heaing ">
+                    <h6>QUICK FACTS</h6>
+                    <h2>Over the last decade, we’ve helped our clients ship products for multiple platforms</h2>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="fact-grd">
+                        <div class="item item1">
+                            <p>2009<br><span>Journey<br>Started</span></p>
+                        </div>
+                        <div class="item item2">
+                            <p>100+<br><span>Number of<br>Employee</span></p>
+                        </div>
+                        <div class="item item3">
+                            <p>250+<br><span>Clients<br>Worldwide</span></p>
+                        </div>
+                        <div class="item item4">
+                            <p>40+<br><span>Technologies<br>supported</span></p>
+                        </div>
+                        <div class="item item5">
+                            <p>30%+<br><span>YOY Organic<br>growth</span></p>
+                        </div>
+                        <div class="item item6">
+                            <p>1000+<br><span>Project<br>Delivered</span></p>
+                        </div>
+                        <div class="item item7">
+                            <p>10 Mil.<br><span>Code<br>developed</span></p>
+                        </div>
+                        <div class="item item8">
+                            <p>2<br><span>ISO<br>Certification</span></p>
+                        </div>
+                        <div class="item item9">
+                            <img src="images/3dc61a3297d84775de8cc23c1ab42dac.png">
+                            <p>150+<br><span>5 start<br>reviews</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative"  style="overflow:hidden; background: #F8FBFC;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 col-md-10 main-heaing">
+                    <h6>Our core values</h6>
+                    <h2>Our core values evolved with us as the company grew and we <span style="color: var(--green);">learned from our experiences.</span></h2>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="hiring-owl value-owl">
+                        <div class="value-box hiring-box">
+                            <img src="images/valu2.png">
+                            <p>Never settle for “good enough” when you know you can and should do better.</p>
+                        </div>
+                        <div class="value-box hiring-box">
+                            <img src="images/valu1.png">
+                            <p>Take ownership and question the status quo in a constructive manner</p>
+                        </div>
+                        <div class="value-box hiring-box">
+                            <img src="images/valu2.png">
+                            <p>Build an inclusive, transparent and socially responsible culture and we work on it every
+                                day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 col-md-10 main-heaing">
+                    <h6>how we work</h6>
+                    <h2>Flexible at the core. Organized to stay in sync. with <span style="color: var(--red);">Transparent Workflow</span></h2>
+                </div>
+                <div class="col-12 col-md-10 content">
+                    <p>To deliver outstanding software, we work in Agile and Lean. We believe in the power of the iterative process — the step-by-step design, development, testing, and release of functionalities.</p>
+                </div>
+                <div class="col-12">
+                    <div class="col-12 exelecnce-wrap mt-4">
+                        <div class="exelecnce-box">
+                            <h4>01</h4>
+                            <h5>Discover</h5>
+                            <h6>Brainstorming<br>
+                                Hypothesis<br>
+                                Conceptualization<br>
+                                Assumptions<br>
+                                Constraints</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>02</h4>
+                            <h5>Define</h5>
+                            <h6>Req. Definition<br>
+                                SRS Document<br>
+                                Project Planning<br>
+                                Dev. Planning<br>
+                                Milestones</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>03</h4>
+                            <h5>Design</h5>
+                            <h6>System Design<br>
+                                Wireframing<br>
+                                Prototyping<br>
+                                UI / UX Design<br>
+                                Architecture</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>04</h4>
+                            <h5>Develop</h5>
+                            <h6>Coding<br>
+                                APIs<br>
+                                Testing / QA<br>
+                                Debug<br>
+                                Change Mgmt</h6>
+                        </div>
+                        <div class="exelecnce-box">
+                            <h4>05</h4>
+                            <h5>Deliver</h5>
+                            <h6>Environment<br>
+                                Deployment<br>
+                                Migration<br>
+                                Support<br>
+                                Review</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 position-relative">
+        <div class="container">
+            <div class="row " style="position: relative;">
+                <div class="col-12 abt-content-grid-wrap client-wrd">
+                    <div class="col-12">
+                        <div class="col-12 main-heaing ">
+                            <h6>words from our clients</h6>
+                            <h2>We believe in building lasting relationships</h2>
+                        </div>
+                        <div class="col-12 content">
+                            <p>We have connected with amazing clients to enable them with all that the digital
+                                revolution has to offer. Seeing our clients passionate about their ideas makes us want
+                                to deliver exceedingly successful mobile applications and websites. And that’s what we
+                                strive to do everyday.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 testi-vdo">
+                        <div>
+                            <img src="images/Rectangle-67.png">
+                            <img src="images/YouTube-Music.png" class="yt">
+                        </div>
+                        <div>
+                            <img src="images/Rectangle-67.png">
+                            <img src="images/YouTube-Music.png" class="yt">
+                        </div>
+                        <div>
+                            <img src="images/Rectangle-67.png">
+                            <img src="images/YouTube-Music.png" class="yt">
+                        </div>
+                        <div>
+                            <img src="images/Rectangle-67.png">
+                            <img src="images/YouTube-Music.png" class="yt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-6 pt-0 position-relative" style="overflow:hidden;">
+        <div class="container position-relative">
+            <div class="row ">
+                <div class="col-12 col-md-8 offset-md-2 main-heaing">
+                    <h2 class="text-center">More than 10 years in the game and we're just getting started.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-12 col-md-6 ft-lt">
+                    <img src="images/logo.png" class="mb-3">
+                    <ul>
+                        <li>
+                            <p class="mb-0">Get Free Estimation</p>
+                            <a href="#" style="color: var(--red);">hello@webmaa.com</a>
+                            <p class="mb-0 mt-3">Skype</p>
+                            <a href="#" style="color: var(--red);">hello.webmaa</a>
+                        </li>
+                        <li>
+                            <p class="mb-0">Call</p>
+                            <a href="#">+91 9830990076</a>
+                            <a href="#">+91 9836987431</a>
+                        </li>
+                        <li>
+                            <p class="mb-0">
+                                <b>INDIA</b><br>
+                                Minarva Garden,<br>
+                                50, DH Road,<br>
+                                Kolkata 700104, WB,<br>
+                                India
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 ft-lt ft-rt">
+                    <b class="mb-3">Company</b>
+                    <ul>
+                        <li>
+                            <a href="#">About us</a>
+                            <a href="#">Career</a>
+                            <a href="#">Blog</a>
+                            <a href="#">How to engage</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ’s</a>
+                            <a href="#">Policies</a>
+                            <a href="#">Sitemap</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 ft-lt ft-rt">
+                    <b class="mb-3">Digital Acceleration Editorial</b>
+                    <p class="mb-0">Boost innovation with insights for change</p>
+                    <form class="d-flex align-items-center" style="background: #E1E1E1;height: 43px;padding: 0 9px;border-radius: 5px;margin-top: 5px;">
+                        <input style="padding: 6px;background: transparent;border: none;width: calc(100% - 44px);">
+                        <button style="padding: 0;background: transparent;border: none;font-family: Poppins;font-size: 12px;font-weight: 600;line-height: 18px;text-align: left;width: 44px;">Submit</button>
+                    </form>
+                    <label class="containe">I agree to receive marketing communication from Webmaa
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 sm-ft">
+                    <p>© 2024 Webmaa. All rights reserved. &nbsp;|&nbsp; <a href="#">Portfolio</a> &nbsp;|&nbsp; <a href="#">Blog</a> &nbsp;|&nbsp; <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Sitemap</a></p>
+                    <p class="text-md-right">Follow us on<a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-dribbble"></i></a><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('.service-owl').owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.recent-owl').owlCarousel({
+        center: true,
+        items: 2,
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 2
+            }
+        }
+
+    })
+    $('.blogbanner').owlCarousel({
+        loop: false,
+        margin: 15,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.testiowl').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        items: 1,
+    })
+</script>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $('.faq-clk').click(function () {
+            if ($(this).hasClass("active")) {
+                $(".faqx").slideUp();
+                $(".faq-clk").removeClass("active");
+            } else {
+                $(".faqx").slideUp();
+                $(".faq-clk").removeClass("active");
+                $(this).parent().find(".faqx").slideToggle();
+                $(this).parent().find(".faq-clk").toggleClass("active");
+            }
+        });
+    });
+</script>
+
+</html>
